@@ -1,0 +1,56 @@
+Installing Minikube K8s on AWS EC2 Instance
+********************************************
+
+
+Step 1
+```````
+First Install Terraform on EC2 Instance
+
+
+Step 2
+```````
+Create One Directory and change into it.
+
+
+Step 3
+```````
+Create new.pem file and paste your key data in this file.
+
+
+Step 4
+```````
+First Create provider.tf
+
+In this set Region,Access and Secret key as per your requriment
+
+
+Step 5
+```````
+Now Create sg.tf
+
+Keep This script as it is.
+
+
+Step 6
+```````
+Create ec2.tf
+
+Change ami ID,availability_zone as per your requriment
+
+Also change Key_name and private_key as you created.
+
+
+Step 7
+```````
+If all script run Successfully then log in into your created instance to check weather our minikube is deploy successfully or not.
+
+Run this command
+
+minikube version
+
+If this shows the minikube version then our deployment is successfully Done.
+
+	
+
+					   Thank You
+					   ********* 
